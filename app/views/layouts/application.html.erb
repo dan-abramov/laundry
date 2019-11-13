@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Прачечная      </title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content='стирка пуховиков, стирка, чистота, прачечная, белье, сушка, пуховики, химчистка, постельное белье, глажка, глажение, сушка белья, одеяло, покрывало, плед, подушка, мягкие игрушки' />
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+       body {
+        font-family: 'Open Sans','Source Sans Pro', Helvetica, sans-serif;
+       }
+    </style>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter51035876 = new Ya.Metrika2({
+                        id:51035876,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks2");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/51035876" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </head>
+
+  <body class="main">
+    <div class="container-fluid wrapper">
+      <div class="row main-header">
+        <a class="logo-header" href="<%= root_path %>">
+          <img src="<%= asset_path 'header/logo.svg'%>">
+        </a>
+
+        <div class="info-header">
+          <img class="t-number-icon" src="<%= asset_path 'header/telephone.svg'%>" />
+          <div class="t-number-header">+7 (931) 3-909-123</div>
+          <div style="font-family: 'Open Sans';
+                      font-size: 1em;
+                      display: inline-block;
+                      margin-left: 1%;">с 11:00 до 22:00 (без выходных)</div>
+          <br>
+          <img class="mail-icon-header" src="<%= asset_path 'header/close-envelope.svg'%>" />
+          <div style="font-family: 'Open Sans';
+                      font-size: 1em;
+                      display: inline-block;
+                      margin-left: 0.4%;
+                      margin-top: 7px;">prachka-laundry@yandex.ru</div>
+        </div>
+
+        <div class="messengers-header">
+          <a href="/">
+            <div class="messenger-icon-header instagram" style="background-image: url(<%= asset_path 'header/instagram.svg' %>)";></div>
+          </a>
+
+          <a href="/">
+            <div class="messenger-icon-header vk" style="background-image: url(<%= asset_path 'header/vk.svg' %>)";></div>
+          </a>
+
+          <a href="/">
+            <div class="messenger-icon-header telegram" style="background-image: url(<%= asset_path 'header/telegram.svg' %>)";></div>
+          </a>
+
+          <a href="/">
+            <div class="messenger-icon-header whatsapp" style="background-image: url(<%= asset_path 'header/whatsapp.svg' %>)";></div>
+          </a>
+
+          <a href="/">
+            <div class="messenger-icon-header viber" style="background-image: url(<%= asset_path 'header/viber.svg' %>)";></div>
+          </a>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center navigation">
+        <a class="navbar-brand navigation-link" href="<%= about_path %>">       </a>
+        <a class="link-with-dropdown" href="<%= laundry_path %>">
+          <div class="navbar-brand navigation-link has-dropdown" onclick="window.location='<%= laundry_path %>'">
+            Прачечная
+            <div class="dropdown-links" >
+              <a class="dropdown-link" href="<%= individuals_path %>"> Для частных лиц </a>
+              <div style="width: 210px; height: 0.5px; color: transparent; margin: auto; box-shadow: 0px -0.3px 0px black;"> </div>
+              <a class="dropdown-link" style="margin-top: -0.5px;" href="<%= organizations_path %>"> Для организаций </a>
+            </div>
+          </div>
+        </a>
+        <a class="navbar-brand navigation-link" href="<%= cleaning_path %>"> Химчистка </a>
+        <a class="navbar-brand navigation-link" href="<%= posts_path %>"> О вашей одежде </a>
+        <a class="navbar-brand navigation-link" href="<%= location_path %>"> Как добраться? </a>
+        <!-- <% unless Post.all.empty? %>
+          <a class="navbar-brand navigation-link" href="<%= posts_path %>"> <%= t(:news_and_discounts) %> </a>
+        <% end %>
+        <% unless Page.all.empty? %>
+          <ul class="navbar-brand navigation-link dropdown-pages"> <%= t(:additionally) %>
+            <div class="pages">
+              <% Page.all.each do |page| %>
+                <a href="<%= page_path(page) %>"><div class="page"> <li> <%= page.title %> </li></div></a>
+              <% end %>
+            </div>
+          </ul>
+        <% end %> -->
+      </div>
+    </div>
+      <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<div class="image-header widest-element" style="background-image: url(<%= asset_path 'for_organizations/header.png' %>); background-position: center;">
+  <div class="image-header-text">
+    <div class="title"> Прачечная для организаций </div>
+    Главная | Прачечная для организаций
+  </div>
+</div>
+<div class="container-fluid wrapper">
+  <div class="row flex-column text-box for_organizations">
+    <div style="font-family: 'Open Sans'; color:  #303030; font-size: 1.87em; font-weight: 600; margin-top: 38px;">
+      Для организаций
+    </div>
+    <div style="margin-top: 22px;">Прачечная «     » оказывает комплексные услуг и по обслуживанию:</div>
+
+    <div class="stickers">
+      <div class="sticker">
+        <img class="sticker-img" src="<%= asset_path 'for_organizations/hotel.svg'%>">
+        <div class="sticker-info">Санаториев</div>
+      </div>
+      <div class="sticker">
+        <img class="sticker-img" src="<%= asset_path 'for_organizations/tray.svg'%>">
+        <div class="sticker-info">Ресторанов<br>и предприятий<br>общественного питания</div>
+      </div>
+      <div class="sticker">
+        <img class="sticker-img" src="<%= asset_path 'for_organizations/room-key.svg'%>">
+        <div class="sticker-info">Отелей и гостиниц</div>
+      </div>
+    </div>
+
+    <div class="paragraph">
+      <img class="paragraph-point" src="<%= asset_path 'common/1icon.svg'%>">
+      Собственная транспортная база позволяет нам оперативно забрать у вас белье и вернуть его в чистом и выглаженном виде.
+      Соблюдение сроков и своевременная доставка – одно из условий нашей работы.
+    </div>
+
+    <div class="paragraph">
+      <img class="paragraph-point" src="<%= asset_path 'common/2icon.svg'%>">
+      Важнейшим критерием для нас также является сохранность качества и количества белья.
+      Мы очень серьезно относимся к соблюдению санитарных норм и правил при стирке белья.
+    </div>
+
+    <div class="paragraph" style="margin-bottom: 60px;">
+      <img class="paragraph-point" src="<%= asset_path 'common/1icon.svg'%>">
+      Заключив договор на долгосрочное обслуживание, вы получаете фиксированные цены на услуг и на все время действия договора.
+    </div>
+  </div>
+</div>
+<div class="map widest-element" style="background-image: url(<%= asset_path 'common/map.png'%>)"></div>
+<%= render partial: 'layouts/footer'%>

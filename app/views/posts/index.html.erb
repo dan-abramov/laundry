@@ -1,0 +1,20 @@
+<div class="image-header widest-element" style="background-image: url(<%= asset_path 'posts/header.png' %>); background-position: center;">
+  <div class="image-header-text">
+    <div class="title"> О вашей одежде </div>
+    Главная | О вашей одежде
+  </div>
+</div>
+<div class="container-fluid wrapper">
+  <div class="row flex-column text-box">
+    <div class="posts">
+      <% @posts.each do |post| %>
+        <%= render partial: "posts/post", locals: { post: post } %>
+      <% end %>
+        <div class="pagy-nav-bar">
+          <%= render partial: "posts/nav", locals: { pagy: @pagy } %>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="map widest-element" style="background-image: url(<%= asset_path 'common/map.png'%>)"></div>
+<%= render partial: 'layouts/footer'%>

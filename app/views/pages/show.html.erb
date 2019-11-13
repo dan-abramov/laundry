@@ -1,0 +1,9 @@
+<div>
+  <div class="row image-header" style="background-image: url(<%= @page.image %>); background-position: center;">
+  </div>
+  <div class="row flex-column text-box">
+    <h2> <%= @page.title %> </h2>
+    <br />
+    <%= sanitize @page.body %>
+  </div>
+</div>

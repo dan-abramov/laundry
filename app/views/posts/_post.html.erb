@@ -1,0 +1,19 @@
+<div class="post-preview">
+  <div class="post-preview-image" style="background-image: url(<%= post.image %>);"></div>
+  <div class="post-preview-content">
+    <div class="post-preview-data">
+      <%= post.created_at.strftime("%d.%m.%Y")  %>
+    </div>
+    <div class="post-preview-title">
+      <%= post.title %>
+    </div>
+     <div class="post-preview-body">
+      <%= sanitize post.body %>
+    </div>
+    <a href="<%= post_path(post) %>">
+      <div class="post-preview-button">
+        Подробнее
+      </div>
+    </a>
+  </div>
+</div>

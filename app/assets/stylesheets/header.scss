@@ -1,0 +1,149 @@
+.main-header {
+  height: 110px;
+}
+
+.logo-header {
+  margin-top: 17px;
+}
+.info-header {
+  width: 40%;
+  margin-top: 34px;
+  margin-left: 4.15%;
+}
+
+.t-number-header {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 0.4%;
+}
+
+.t-number-icon {
+  margin-top: -4px;
+  width: 14px;
+}
+
+.mail-icon-header {
+  width: 14px;
+}
+
+.messengers-header {
+  margin-left: auto;
+  margin-top: 35px;
+}
+
+.messenger-icon-header {
+  width: 44px;
+  height: 44px;
+  margin-left: 6px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color:  #0085b1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.messenger-icon-header.instagram:hover {
+  background-color:  white;
+  background-image: url(/assets/header/instagram_c.svg) !important;
+  box-shadow:  0px 1px 7.84px 0.16px rgba(26, 26, 26, 0.16);
+}
+
+.messenger-icon-header.vk:hover {
+  background-color:  white;
+  background-image: url(/assets/header/vk_c.svg) !important;
+  box-shadow:  0px 1px 7.84px 0.16px rgba(26, 26, 26, 0.16);
+}
+
+.messenger-icon-header.telegram:hover {
+  background-color:  white;
+  background-image: url(/assets/header/telegram_c.svg) !important;
+  box-shadow:  0px 1px 7.84px 0.16px rgba(26, 26, 26, 0.16);
+}
+
+.messenger-icon-header.viber:hover {
+  background-color:  white;
+  background-image: url(/assets/header/viber_c.svg) !important;
+  box-shadow:  0px 1px 7.84px 0.16px rgba(26, 26, 26, 0.16);
+}
+
+.messenger-icon-header.whatsapp:hover {
+  background-color:  white;
+  background-image: url(/assets/header/whatsapp_c.svg) !important;
+  box-shadow:  0px 1px 7.84px 0.16px rgba(26, 26, 26, 0.16);
+}
+
+
+.navigation {
+  height: 70px;
+  border-top: 2px solid #00b1af;
+}
+.navigation-link {
+  font-family: 'Roboto';
+  color: #161515 !important;
+  font-size: 1.123em !important;
+  font-weight: 400;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4.9% !important;
+  padding-right: 4.9% !important;
+}
+.navbar-brand {
+  margin-right: 0px !important;
+}
+a.navigation-link {
+  text-decoration: none;
+  color: white;
+}
+.navigation-link:hover {
+  background-color: #00b1af;
+  color: white !important;
+}
+.link-with-dropdown {
+  color: #161515 !important;
+}
+
+.link-with-dropdown:hover {
+  color: white !important;
+}
+
+.dropdown-links {
+  position: absolute;
+  margin-top: 74px;
+  z-index: 1;
+  display: none;
+  width: 230px;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0px 6px 7.76px 0.24px rgba(0, 0, 0, 0.33);
+  margin-left: 17px;
+}
+
+.dropdown-link {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  padding-left: 16px;
+  align-items: center;
+  font-family: 'Roboto';
+  color:  #303030 !important;
+  font-size: 0.998em;
+  font-weight: 400;
+}
+
+.dropdown-link:hover {
+  background-color: #00b1af;
+  color: white !important;
+}
+
+.has-dropdown {
+  position: relative;
+  cursor: pointer;
+  color: white;
+
+}
+.has-dropdown:hover .dropdown-links { display: block; }
+.has-dropdown:hover .link-with-dropdown { color: white !important; }

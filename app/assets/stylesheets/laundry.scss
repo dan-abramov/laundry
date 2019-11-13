@@ -1,0 +1,171 @@
+.slideshow {
+  height: 630px;
+  width: 100%;
+  position: relative;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.slide-content {
+  background-color: initial !important;
+  position: relative;
+}
+
+.slide-body {
+  margin-top: 159px;
+}
+
+.read-more-button {
+  position: absolute;
+  margin-top: 385px;
+  background: -webkit-linear-gradient(0deg, #00b1af 0%, #7ac7ec 100%);
+  background: -moz-linear-gradient(0deg, #00b1af 0%, #7ac7ec 100%);
+  background: -o-linear-gradient(0deg, #00b1af 0%, #7ac7ec 100%);
+  background: -ms-linear-gradient(0deg, #00b1af 0%, #7ac7ec 100%);
+  background: linear-gradient(90deg, #00b1af 0%, #7ac7ec 100%);
+  box-shadow: 0px 1px 46px 0px rgba(21, 21, 21, 0.15);
+  width: 220px;
+  height: 54px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans';
+  color:  #ffffff;
+  font-size: 1.123em;
+  font-weight: 600;
+}
+
+.read-more-button:hover {
+  background: #0085b1;
+}
+
+.dots-container {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dots {
+  margin-top: 588px;
+  display: flex;
+  text-align: center;
+  z-index: 1500;
+}
+
+.dot {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color:  #ffffff;
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+}
+
+.dot:hover {
+  background-color: #0085b1;
+  border: 2px solid white;
+}
+
+.current-dot {
+  border: 2px solid white;
+  background-color:  #0085b1;
+  width: 14px;
+  height: 14px;
+}
+
+.feedback {
+  width: 100%;
+  height: 616px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feedback-content {
+  max-width: 1252px;
+  min-width: 100px;
+  height: 100%;
+  margin: auto;
+}
+
+.feedback-title {
+  font-family: 'Open Sans';
+  padding-top: 152px;
+  color:  #ffffff;
+  font-size: 1.87em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.feedback-body {
+  margin-left: 23px;
+  margin-right: 23px;
+  width: 1170px;
+  height: 340px;
+  position: relative;
+}
+
+.customer-review {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 6px;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+}
+
+.customer-review-image {
+  height: 100px;
+  width: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 1px 2px 9.8px 0.2px rgba(0, 0, 0, 0.33);
+  border-radius: 50%;
+  background-size: auto 100px;
+  margin: auto;
+  margin-top: 31px;
+}
+
+.prev-review {
+  cursor: pointer;
+}
+
+.next-review {
+  cursor: pointer;
+}
+
+.customer-review-name {
+  margin-top: 14px;
+  font-family: 'Roboto';
+  color:  #161616;
+  font-size: 1.12em;
+  font-weight: 500;
+}
+
+.customer-review-data {
+  font-family: 'Roboto';
+  color:  #303030;
+  font-size: 1.124em;
+  font-style: italic;
+  line-height: 0.194;
+  margin-top: 6px;
+}
+
+.customer-review-body {
+  font-family: 'Roboto';
+  color:  #303030;
+  font-size: 0.998em;
+  font-weight: 400;
+  width: 65%;
+  margin: auto;
+  margin-top: 20px;
+}

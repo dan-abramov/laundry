@@ -1,0 +1,12 @@
+.iframe-map-container {
+  position: relative;
+  margin: auto;
+  max-width: 1920px;
+  min-width: 960px;
+  height: 560px;
+}
+
+.iframe-map-container iframe {
+  height: 100%;
+  width: 100%;
+}
